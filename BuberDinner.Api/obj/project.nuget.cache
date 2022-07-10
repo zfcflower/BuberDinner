@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "7j0FZIbI3Qnb9vLZICOR8tesCaewgYFwgFL5atxzCvZ550j0/c1YnKH3uly5Tjcu0Tg+ZxIvHznc5ak+hrSUcw==",
+  "dgSpecHash": "sUQY/7BryJ9u2x0ppC916+C5QM4uV6/Sorupty6FPhSA8uY6ZIPGyq8QiT4JEkugGQfdRSt+yupo5gJyFoU+Kw==",
   "success": true,
   "projectFilePath": "D:\\PROJETS\\BuberDinner\\BuberDinner.Api\\BuberDinner.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\olive.koube\\.nuget\\packages\\erroror\\0.1.0\\erroror.0.1.0.nupkg.sha512",
     "C:\\Users\\olive.koube\\.nuget\\packages\\fluentresults\\3.8.0\\fluentresults.3.8.0.nupkg.sha512",
+    "C:\\Users\\olive.koube\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\olive.koube\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\olive.koube\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
     "C:\\Users\\olive.koube\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\olive.koube\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "C:\\Users\\olive.koube\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

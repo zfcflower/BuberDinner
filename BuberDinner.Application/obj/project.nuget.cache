@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "g1n2Mofn1e6MWH4dTs8l54rMiJ6pNZZB/ZlsS0JoCOs4wG/0TOnLLW1Uq8PVMQg7yUELtlAl3Q7xy8J4MwnI+A==",
+  "dgSpecHash": "R6nTUyqqPhOBrOEPzxFXgxnNdxFjWBA2OIJ6zT23NuYHGCnu4W0GTBA1DLktoEP9IHQ998vp1r5/84pOyda5RA==",
   "success": true,
   "projectFilePath": "D:\\PROJETS\\BuberDinner\\BuberDinner.Application\\BuberDinner.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\olive.koube\\.nuget\\packages\\erroror\\0.1.0\\erroror.0.1.0.nupkg.sha512",
     "C:\\Users\\olive.koube\\.nuget\\packages\\fluentresults\\3.8.0\\fluentresults.3.8.0.nupkg.sha512",
+    "C:\\Users\\olive.koube\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\olive.koube\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\olive.koube\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
     "C:\\Users\\olive.koube\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\olive.koube\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512"
   ],

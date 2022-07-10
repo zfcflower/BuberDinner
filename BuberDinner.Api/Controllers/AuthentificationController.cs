@@ -1,5 +1,8 @@
-﻿using BuberDinner.Application.Services.Authentification;
+﻿using BuberDinner.Application.Authentification.Commands.Register;
+using BuberDinner.Application.Authentification.Common;
+using BuberDinner.Application.Authentification.Queries.Login;
 using BuberDinner.Contracts.Authentification;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BuberDinner.Api.Controllers;
@@ -7,19 +10,20 @@ namespace BuberDinner.Api.Controllers;
 [Route("auth")]
 public class AuthentificationController : ApiController
 {
-    public readonly IAuthentificationServices _authentificationServices;
+    private readonly ISender _mediator;
 
-    public AuthentificationController(IAuthentificationServices authentificationServices)
+    public AuthentificationController(ISender mediator)
     {
-        _authentificationServices = authentificationServices;
+        _mediator = mediator;
     }
     [HttpPost("register")]
-    public IActionResult Register(RegisterRequest request)
+    public async Task<IActionResult> Register(RegisterRequest request)
     {
-        var authResult = _authentificationServices.Register(request.FirstName,
+        var command = new RegisterCommand(request.FirstName,
             request.LastName,
             request.Email,
             request.Password);
+        var authResult = await _mediator.Send(command);
 
         return authResult.Match(
             result => Ok(MapAuthResult(result)),
@@ -29,14 +33,15 @@ public class AuthentificationController : ApiController
     
 
     [HttpPost("login")]
-    public IActionResult Login(LoginRequest request)
+    public async Task<IActionResult> Login(LoginRequest request)
     {
-        var authResult = _authentificationServices.Login(
+        var query = new LoginQuery(
             request.Email,
             request.Password);
+        var authResult = await _mediator.Send(query);
         
         return authResult.Match(
-            authResult => Ok(MapAuthResult(authResult)),
+            results => Ok(MapAuthResult(results)),
             errors => Problem(errors));
     }
     

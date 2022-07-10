@@ -38,3 +38,6 @@ D:\PROJETS\BuberDinner\BuberDinner.Api\obj\Debug\net6.0\ref\BuberDinner.Api.dll
 D:\PROJETS\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\ErrorOr.dll
 D:\PROJETS\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\FluentResults.dll
 D:\PROJETS\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\PROJETS\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\MediatR.dll
+D:\PROJETS\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\MediatR.Contracts.dll
+D:\PROJETS\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
