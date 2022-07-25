@@ -2,4 +2,4 @@
 
 namespace BuberDinner.Application.Authentification.Common;
 
-public record AuthentificationResult(User user,string Token);
+public record AuthentificationResult(User User,string Token);
