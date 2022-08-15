@@ -41,3 +41,10 @@ D:\PROJETS\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\Microsoft.Extensions.Log
 D:\PROJETS\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\MediatR.dll
 D:\PROJETS\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\MediatR.Contracts.dll
 D:\PROJETS\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+D:\PROJETS\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\FluentValidation.dll
+D:\PROJETS\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+D:\PROJETS\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\PROJETS\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\Mapster.dll
+D:\PROJETS\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\Mapster.Core.dll
+D:\PROJETS\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\Mapster.DependencyInjection.dll
+D:\PROJETS\BuberDinner\BuberDinner.Api\obj\Debug\net6.0\BuberDinner.Api.MvcApplicationPartsAssemblyInfo.cs

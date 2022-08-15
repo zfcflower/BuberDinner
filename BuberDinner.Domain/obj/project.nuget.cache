@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "z01s05sh81a7ms4ySPSK1nztMgrXabpQE7zIiqmDGlk63UkdAwplq3QdinPN+Yet4wN65GU0PsZDgRn6cQWHng==",
+  "dgSpecHash": "A7dARxoV/q7dImr9qY10a6alNcodowHp0wTjsitaAYaCM5OpZJCsA6QeTSb+CZKrdKXa18SegCOCBemHZj0R0Q==",
   "success": true,
   "projectFilePath": "D:\\PROJETS\\BuberDinner\\BuberDinner.Domain\\BuberDinner.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\olive.koube\\.nuget\\packages\\erroror\\0.1.0\\erroror.0.1.0.nupkg.sha512"
+    "C:\\Users\\olive.koube\\.nuget\\packages\\erroror\\1.0.0\\erroror.1.0.0.nupkg.sha512"
   ],
   "logs": []
 }
