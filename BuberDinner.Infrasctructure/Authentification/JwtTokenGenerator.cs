@@ -1,9 +1,11 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+
 using BuberDinner.Application.Common.Interfaces.Authentification;
 using BuberDinner.Application.Common.Interfaces.Services;
-using BuberDinner.Domain.User;
+using BuberDinner.Domain.UserAggregate;
+
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
@@ -26,7 +28,7 @@ public class JwtTokenGenerator : IJwtTokenGenerator
             new SymmetricSecurityKey(
                 Encoding.UTF8.GetBytes(_jwtSettings.Secret)),
             SecurityAlgorithms.HmacSha256);
-        
+
         var claims = new[]
         {
             new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),

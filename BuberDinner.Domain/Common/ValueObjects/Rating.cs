@@ -1,6 +1,6 @@
 ﻿using BuberDinner.Domain.Common.Models;
 
-namespace BuberDinner.Domain.Menu.ValueObjects
+namespace BuberDinner.Domain.Common.ValueObjects
 {
     public sealed class Rating : ValueObject
     {

@@ -37,7 +37,7 @@ public class ValidationBehavior<TRequest,TResponse>
             .ConvertAll(validationFailure => Error.Validation(
                 validationFailure.PropertyName,
                 validationFailure.ErrorMessage));
-        //befor the handler
+        //before the handler
         //var result = await next();
         //after the handler
         return (dynamic)errorList;

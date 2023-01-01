@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "151iqpufCqOf7lcUhX86DdA+fgz2r/Qyoe3DzHt/uADkpVW5feNTE8lw/ttT10Y9OrhQ25bboh3Nlx9zanzMIg==",
+  "dgSpecHash": "uXINshZP41g/4UPacFI1AbYUN2uCcD6sr4XVwP0MGMfqg5HBEyfnOs/HRSfsNVd+3gOo+25yHdSbt1BJQ0xjCg==",
   "success": true,
   "projectFilePath": "D:\\Projets\\BuberDinner\\BuberDinner.Domain\\BuberDinner.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\olive\\.nuget\\packages\\erroror\\1.0.0\\erroror.1.0.0.nupkg.sha512"
+    "C:\\Users\\olive\\.nuget\\packages\\erroror\\1.0.0\\erroror.1.0.0.nupkg.sha512",
+    "C:\\Users\\olive\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.435\\stylecop.analyzers.1.2.0-beta.435.nupkg.sha512",
+    "C:\\Users\\olive\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.435\\stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512"
   ],
   "logs": []
 }
