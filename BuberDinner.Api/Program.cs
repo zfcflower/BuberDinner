@@ -9,14 +9,13 @@ var builder = WebApplication.CreateBuilder(args);
         .AddPresentation()
         .AddApplication()
         .AddInfrastructure(builder.Configuration);
-    //builder.Services.AddControllers(options => options.Filters.Add<ErrorHandlingFilterAttribute>()); Fichiers cachés
-    
-}
 
+    // builder.Services.AddControllers(options => options.Filters.Add<ErrorHandlingFilterAttribute>()); Fichiers cachés
+}
 
 var app = builder.Build();
 {
-    //app.UseMiddleware<ErrorHandlingMiddleware>(); Fichiers cachés
+    // app.UseMiddleware<ErrorHandlingMiddleware>(); Fichiers cachés
     app.UseExceptionHandler("/error");
     app.UseHttpsRedirection();
     app.UseAuthentication();

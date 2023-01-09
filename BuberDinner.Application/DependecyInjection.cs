@@ -1,8 +1,5 @@
 ﻿using System.Reflection;
-using BuberDinner.Application.Authentification.Commands.Register;
-using BuberDinner.Application.Authentification.Common;
 using BuberDinner.Application.Common.Behaviors;
-using ErrorOr;
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,7 +15,7 @@ public static class DependecyInjection
         services.AddScoped(
             typeof(IPipelineBehavior<,>),
             typeof(ValidationBehavior<,>));
-        
+
         return services;
     }
 }
