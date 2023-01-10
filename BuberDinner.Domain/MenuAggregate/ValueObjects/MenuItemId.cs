@@ -11,11 +11,14 @@ namespace BuberDinner.Domain.MenuAggregate.ValueObjects
             Value = value;
         }
 
-        public static MenuItemId CreateUnique() => new MenuItemId(Guid.NewGuid());
+        public static MenuItemId CreateUnique() => new(Guid.NewGuid());
+
+        public static MenuItemId Create(Guid value) => new(value);
 
         public override IEnumerable<object> GetEqualityComponnents()
         {
             yield return Value; 
         }
+
     }
 }

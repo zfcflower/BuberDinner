@@ -11,7 +11,9 @@ namespace BuberDinner.Domain.GuestAggregate.ValueObjects
             Value = value;
         }
 
-        public static GuestRatingId CreateUnique() => new GuestRatingId(Guid.NewGuid());
+        public static GuestRatingId CreateUnique() => new(Guid.NewGuid());
+        
+        public static GuestRatingId Create(Guid value) => new(value);
 
         public override IEnumerable<object> GetEqualityComponnents()
         {

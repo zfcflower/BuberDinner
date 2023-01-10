@@ -22,7 +22,7 @@ namespace BuberDinner.Domain.HostAggregate
         public DateTime UpdatedDateTime { get; set; }
 
         private Host(HostId hostId, string firstName, string lastName, Uri profilImage,
-            AverageRating averageRating, UserId userId, DateTime createdDateTime, DateTime updatedDateTime)
+            AverageRating averageRating, UserId userId)
             : base(hostId)
         {
             FirstName = firstName;
@@ -30,13 +30,13 @@ namespace BuberDinner.Domain.HostAggregate
             ProfilImage = profilImage;
             AverageRating = averageRating;
             UserId = userId;
-            CreatedDateTime = createdDateTime;
-            UpdatedDateTime = updatedDateTime;
+            CreatedDateTime = DateTime.Now;
+            UpdatedDateTime = DateTime.Now;
         }
 
         public static Host Create(string firstName, string lastName, Uri profilImage,
             AverageRating averageRating, UserId userId)
-            => new(HostId.CreateUnique(), firstName, lastName, profilImage, averageRating,
-                userId, DateTime.UtcNow, DateTime.UtcNow);
+            => new(HostId.Create(userId), firstName, lastName, profilImage, averageRating,
+                userId);
     }
 }

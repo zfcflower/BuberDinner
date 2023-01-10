@@ -20,7 +20,7 @@ namespace BuberDinner.Api.Common.Mapping
                 .Map(dest => dest.Id, src => src.Id.Value)
                 .Map(dest => dest.AverageRating, src => src.AverageRating.NumRatings > 0 ? src.AverageRating.Value : 0)
                 .Map(dest => dest.HostId, src => src.HostId.Value)
-                .Map(dest => dest.DinnerIds, src => src.Dinners.Select(dinnerId => dinnerId.Value))
+                .Map(dest => dest.DinnerIds, src => src.DinnerIds.Select(dinnerId => dinnerId.Value))
                 .Map(dest => dest.MenuReviewIds, src => src.MenuReviewIds.Select(menuId => menuId.Value));
 
             config.NewConfig<MenuSection, MenuSectionResponse>()

@@ -20,7 +20,7 @@ namespace BuberDinner.Domain.MenuReviewAggregate
         public DateTime UpdatedDateTime { get; set; }
 
         private MenuReview(MenuReviewId menuReviewId, Rating rating, string comment, HostId hostId, MenuId menuId, 
-            GuestId guestId, DinnerId dinnerId, DateTime createdDateTime, DateTime updatedDateTime)
+            GuestId guestId, DinnerId dinnerId)
             : base(menuReviewId)
         {
             Rating = rating;
@@ -29,13 +29,13 @@ namespace BuberDinner.Domain.MenuReviewAggregate
             MenuId = menuId;
             GuestId = guestId;
             DinnerId = dinnerId;
-            CreatedDateTime = createdDateTime;
-            UpdatedDateTime = updatedDateTime;
+            CreatedDateTime = DateTime.Now;
+            UpdatedDateTime = DateTime.Now;
         }
 
         public static MenuReview Create(Rating rating, string comment, HostId hostId, MenuId menuId,
             GuestId guestId, DinnerId dinnerId)
             => new(MenuReviewId.CreateUnique(), rating, comment, hostId, menuId, 
-                guestId, dinnerId, DateTime.UtcNow, DateTime.UtcNow);
+                guestId, dinnerId);
     }
 }

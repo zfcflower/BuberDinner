@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuberDinner.Contracts", "BuberDinner.Contracts\BuberDinner.Contracts.csproj", "{56E3CF08-059F-4BEB-AEB3-F5D922BCEEEB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuberDinner.Infrasctructure", "BuberDinner.Infrasctructure\BuberDinner.Infrasctructure.csproj", "{D56B4C19-FDDF-466A-9AF8-2CE2C39B8AED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuberDinner.Infrastructure", "BuberDinner.Infrastructure\BuberDinner.Infrastructure.csproj", "{D56B4C19-FDDF-466A-9AF8-2CE2C39B8AED}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuberDinner.Application", "BuberDinner.Application\BuberDinner.Application.csproj", "{6EE91063-021D-4140-811B-200199059A06}"
 EndProject

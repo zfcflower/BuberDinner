@@ -13,18 +13,17 @@ namespace BuberDinner.Domain.GuestAggregate.Entities
         public Rating Rating { get; }
         public DateTime CreatedDateTime { get; set; }
         public DateTime UpdatedDateTime { get; set; }
-        private GuestRating(GuestRatingId guestRatingId, HostId hostId, DinnerId dinnerId, Rating rating,
-            DateTime createdDateTime, DateTime updatedDateTime) 
+        private GuestRating(GuestRatingId guestRatingId, HostId hostId, DinnerId dinnerId, Rating rating)
             : base(guestRatingId)
         {
             HostId = hostId;
             DinnerId = dinnerId;
             Rating = rating;
-            CreatedDateTime = createdDateTime;
-            UpdatedDateTime = updatedDateTime;
+            CreatedDateTime = DateTime.Now;
+            UpdatedDateTime = DateTime.Now;
         }
 
         public static GuestRating Create(HostId hostId, DinnerId dinnerId, Rating rating) 
-            => new(GuestRatingId.CreateUnique(), hostId, dinnerId, rating,DateTime.UtcNow,DateTime.UtcNow);
+            => new(GuestRatingId.CreateUnique(), hostId, dinnerId, rating);
     }
 }

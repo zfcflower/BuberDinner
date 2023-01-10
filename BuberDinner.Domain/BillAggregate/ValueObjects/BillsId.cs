@@ -11,8 +11,10 @@ namespace BuberDinner.Domain.BillAggregate.ValueObjects
             Value = value;
         }
 
-        public static BillsId CreateUnique() => new BillsId(Guid.NewGuid());
+        public static BillsId CreateUnique() => new(Guid.NewGuid());
 
+        public static BillsId Create(Guid value) => new(value);
+        
         public override IEnumerable<object> GetEqualityComponnents()
         {
             yield return Value;

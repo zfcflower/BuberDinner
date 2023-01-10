@@ -12,17 +12,17 @@ public sealed class User : Entity<UserId>
     public DateTime CreatedDateTime { get; set; }
     public DateTime UpdatedDateTime { get; set; }
     private User(UserId userId, string firstName, string lastName, string email,
-        string password, DateTime createdDateTime, DateTime updateDateTime)
+        string password)
         : base(userId)
     {
         FirstName = firstName;
         LastName = lastName;
         Email = email;
         Password = password;
-        CreatedDateTime = createdDateTime;
-        UpdatedDateTime = updateDateTime;
+        CreatedDateTime = DateTime.Now;
+        UpdatedDateTime = DateTime.Now;
     }
 
     public static User Create(string firstName, string lastName, string email, string password)
-            => new(UserId.CreateUnique(), firstName, lastName, email, password, DateTime.UtcNow, DateTime.UtcNow);
+            => new(UserId.CreateUnique(), firstName, lastName, email, password);
 }

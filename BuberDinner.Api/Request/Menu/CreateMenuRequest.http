@@ -1,7 +1,3 @@
-@host = https://localhost:7116
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJCdWJlckRpbm5lci5Eb21haW4uVXNlckFnZ3JlZ2F0ZS5WYWx1ZU9iamVjdHMuVXNlcklkIiwiZ2l2ZW5fbmFtZSI6Ik9saXZlIiwiZmFtaWx5X25hbWUiOiJLb3ViZSIsImp0aSI6Ijg4Y2Y5ZTlkLWY2ZWYtNGE2MC04MDg4LWY3YmJlNDIwMWI0NiIsImV4cCI6MTY2OTM5OTEzNiwiaXNzIjoiQnViZXJEaW5uZXIiLCJhdWQiOiJCdWJlckRpbm5lciJ9.G4WTFXqyZMoCJmgo-FtYJGuvtuzEObBUnNPtTpSh16s
-@hostId = idgaf
-
 POST {{host}}/host/{{hostId}}/menus
 Content-Type: application/json
 Authorization: Bearer {{token}}

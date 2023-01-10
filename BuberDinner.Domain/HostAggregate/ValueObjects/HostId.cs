@@ -1,22 +1,20 @@
 ﻿using BuberDinner.Domain.Common.Models;
+using BuberDinner.Domain.UserAggregate.ValueObjects;
 
 namespace BuberDinner.Domain.HostAggregate.ValueObjects
 {
     public sealed class HostId : ValueObject
     {
-        public Guid Value { get; }
+        public string Value { get; }
 
-        private HostId(Guid value)
+        private HostId(string value)
         {
             Value = value;
         }
 
-        public static HostId CreateUnique() => new HostId(Guid.NewGuid());
-        public static HostId Create(string id)
-        {
-            Guid.TryParse(id, out Guid guid);
-            return new HostId(guid);
-        }
+        public static HostId Create(UserId userId) => new($"Host_{userId}");
+
+        public static HostId Create(string value) => new(value);
 
         public override IEnumerable<object> GetEqualityComponnents()
         {

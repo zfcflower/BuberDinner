@@ -13,19 +13,19 @@ namespace BuberDinner.Domain.DinnerAggregate.Entities
         public DateTime CreatedDateTime { get; set; }
         public DateTime UpdatedDateTime { get; set; }
         private DinnerReservation(DinnerReservartionId dinnerReservartionId,int guestCount, string reservationStatus,
-            GuestId guestId, DateTime? arrivalDateTime ,DateTime createdDateTime, DateTime updatedDateTime) 
+            GuestId guestId, DateTime? arrivalDateTime)
             : base(dinnerReservartionId)
         {
             GuestCount = guestCount;
             ReservationStatus = reservationStatus;
             GuestId = guestId;
             ArrivalDateTime = arrivalDateTime;
-            CreatedDateTime = createdDateTime;
-            UpdatedDateTime = updatedDateTime;
+            CreatedDateTime = DateTime.Now;
+            UpdatedDateTime = DateTime.Now;
         }
 
         public static DinnerReservation Create(int guestCount, string reservationStatus, GuestId guestId,
             DateTime? arrivalDateTime) 
-            => new(DinnerReservartionId.CreateUnique(), guestCount, reservationStatus,guestId,null,DateTime.UtcNow,DateTime.UtcNow);
+            => new(DinnerReservartionId.CreateUnique(), guestCount, reservationStatus,guestId,null);
     }
 }

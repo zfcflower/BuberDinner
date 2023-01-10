@@ -30,8 +30,8 @@ namespace BuberDinner.Domain.DinnerAggregate
 
         private Dinner(DinnerId dinnerId, string name, string description, DateTime startDateTime,
             DateTime endDateTime, DateTime startedDateTime, DateTime endedDateTime, string status,
-            bool isPublic, int maxGuests, Price price, MenuId menuId, HostId hostId, Uri image, 
-            Location location, DateTime createdDateTime, DateTime updatedDateTime)
+            bool isPublic, int maxGuests, Price price, MenuId menuId, HostId hostId, Uri image,
+            Location location)
             : base(dinnerId)
         {
             Name = name;
@@ -48,8 +48,8 @@ namespace BuberDinner.Domain.DinnerAggregate
             HostId = hostId;
             Image = image;
             Location = location;
-            CreatedDateTime = createdDateTime;
-            UpdatedDateTime = updatedDateTime;
+            CreatedDateTime = DateTime.Now;
+            UpdatedDateTime = DateTime.Now;
         }
 
         public static Dinner Create(string name, string description, DateTime startDateTime,
@@ -58,6 +58,6 @@ namespace BuberDinner.Domain.DinnerAggregate
             Location location) 
             => new(DinnerId.CreateUnique(), name, description, startDateTime, endDateTime,
                 startedDateTime, endedDateTime, status, isPublic, maxGuests, price, menuId, hostId, image,
-                location,DateTime.UtcNow, DateTime.UtcNow);
+                location);
     }
 }

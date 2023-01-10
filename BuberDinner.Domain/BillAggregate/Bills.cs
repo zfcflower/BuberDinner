@@ -16,18 +16,18 @@ namespace BuberDinner.Domain.BillAggregate
         public DateTime UpdatedDateTime { get; }
 
         private Bills(BillsId billsId, DinnerId dinnerId, GuestId guestId, HostId hostId,
-            Price price, DateTime createdDateTime, DateTime updateDateTime)
+            Price price)
             : base(billsId)
         {
             DinnerId = dinnerId;
             GuestId = guestId;
             HostId = hostId;
             Price = price;
-            CreatedDateTime = createdDateTime;
-            UpdatedDateTime = updateDateTime;
+            CreatedDateTime = DateTime.Now;
+            UpdatedDateTime = DateTime.Now;
         }
 
         public static Bills Create(DinnerId dinnerId, GuestId guestId, HostId hostId, Price price)
-            => new(BillsId.CreateUnique(), dinnerId, guestId, hostId, price, DateTime.UtcNow, DateTime.UtcNow);
+            => new(BillsId.CreateUnique(), dinnerId, guestId, hostId, price);
     }
 }
